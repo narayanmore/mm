@@ -4,5 +4,5 @@ from django.views.decorators.csrf import csrf_protect
 @csrf_protect
 # Create your views here.
 def funhome(request):
-    s="this is practice"
-    return HttpResponse(s)
+    res=render(request,'home/home.html')
+    return res
